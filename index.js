@@ -36,7 +36,7 @@ function viewCart() {
 }
 
 function total() {
-  var output = 0;
+  var output = 0;                               
   if (cart.length === 0) {
     return output;
   } else {
