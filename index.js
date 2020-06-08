@@ -51,10 +51,14 @@ function total() {
 
 function removeFromCart(item) {
   var i = 0;
-  while (i <cart.length) {
+  while (i < cart.length) {
     if (cart[i].itenName === item) {
-      cart.splice()
+      cart.splice(i,1);
+      return cart;
+    } else {
+      i += 1;
     }
+    return `That item is not in your cart.`;
   }
 }
 
