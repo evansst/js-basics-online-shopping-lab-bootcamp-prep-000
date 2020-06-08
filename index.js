@@ -51,7 +51,7 @@ function total() {
 
 function removeFromCart(item) {
   var i = 0;
-  while (i <= cart.length) {
+  while (i+1 < cart.length) {
     if (cart[i].itemName === item) {
       var removed = cart.splice(i,1);
       return cart;
