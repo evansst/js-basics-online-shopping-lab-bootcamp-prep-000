@@ -50,7 +50,12 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
+  var i = 0;
+  while (i <cart.length) {
+    if (cart[i].itenName === item) {
+      
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
