@@ -45,7 +45,6 @@ function total() {
       output = output + cart[i].itemPrice;
       i += 1;
     }
-    output = output + cart[i].itemPrice;
     return output;
   }
 }
