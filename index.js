@@ -36,7 +36,17 @@ function viewCart() {
 }
 
 function total() {
-  
+  var output = 0;
+  if (cart.length === 0) {
+    return output;
+  } else {
+    var i = 1
+    while (i < cart.length) {
+      output = output + cart[i].itemPrice;
+      i += 1;
+    }
+    return output;
+  }
 }
 
 function removeFromCart(item) {
