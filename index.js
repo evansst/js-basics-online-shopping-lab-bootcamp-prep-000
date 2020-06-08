@@ -40,7 +40,7 @@ function total() {
   if (cart.length === 0) {
     return output;
   } else {
-    var i = 1
+    var i = 0
     while (i < cart.length) {
       output = output + cart[i].itemPrice;
       i += 1;
