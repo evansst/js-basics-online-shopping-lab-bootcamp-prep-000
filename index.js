@@ -53,7 +53,7 @@ function removeFromCart(item) {
   var i = 0;
   while (i < cart.length) {
     if (cart[i].itemName === item) {
-      removed = cart.splice(i,1);
+      var removed = cart.splice(i,1);
       return cart;
     } else {
       i += 1;
