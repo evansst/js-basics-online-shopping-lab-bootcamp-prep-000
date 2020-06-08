@@ -36,10 +36,10 @@ function viewCart() {
 }
 
 function total() {
-  var output = 0;                               
-  if (cart.length === 0) {
+  var output = 0;                                                                 //declare output
+  if (cart.length === 0) {                                                        //check for empty cart, and return 0 if true
     return output;
-  } else {
+  } else {                                                                //add itemPrice to running total for all objects in array
     var i = 0
     while (i < cart.length) {
       output = output + cart[i].itemPrice;
