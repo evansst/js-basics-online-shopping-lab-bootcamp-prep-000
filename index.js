@@ -41,10 +41,11 @@ function total() {
     return output;
   } else {
     var i = 1
-    while (i-1 < cart.length) {
+    while (i < cart.length) {
       output = output + cart[i].itemPrice;
       i += 1;
     }
+    output = output + cart[i].itemPrice;
     return output;
   }
 }
