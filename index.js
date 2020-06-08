@@ -36,8 +36,8 @@ function viewCart() {
 }
 
 function total() {
-  var output = 0;                                                                 //declare output
-  if (cart.length === 0) {                                                        //check for empty cart, and return 0 if true
+  var output = 0;                                                         //declare output
+  if (cart.length === 0) {                                                //check for empty cart, and return 0 if true
     return output;
   } else {                                                                //add itemPrice to running total for all objects in array
     var i = 0
@@ -45,12 +45,12 @@ function total() {
       output = output + cart[i].itemPrice;
       i += 1;
     }
-    return output;
+    return output;                                                        //return total
   }
 }
 
 function removeFromCart(item) {
-  // write your code here
+  
 }
 
 function placeOrder(cardNumber) {
